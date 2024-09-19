@@ -1,11 +1,13 @@
 import "./styles.css";
+import { Utility } from "./pages/Utility.js";
 import { Home } from "./pages/Home.js";
 import { Menu } from "./pages/Menu.js";
 import { About } from "./pages/About.js";
 
 // Main App
-const appDivContainer = document.querySelector("#content");
 const nav = document.querySelector(".nav");
+
+console.log(Utility.appDivContainer);
 
 // Start with default Home page
 Home.createHomePage();
