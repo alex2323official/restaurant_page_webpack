@@ -2,7 +2,8 @@ import { Utility } from "./Utility";
 
 export class Home {
   static createHomePage() {
-    console.log("home page loaded from Home class");
+    // Clear old web page
+    Utility.appDivContainer.innerHTML = "";
 
     const homePageContainerDiv = document.createElement("div");
     homePageContainerDiv.classList.add("home__container");
