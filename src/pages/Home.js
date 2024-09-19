@@ -1,3 +1,5 @@
 export class Home {
-  static hello = "hello";
+  static createHomePage() {
+    console.log("home page loaded from Home class");
+  }
 }

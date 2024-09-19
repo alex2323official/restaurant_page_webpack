@@ -8,16 +8,17 @@ const appDivContainer = document.querySelector("#content");
 const nav = document.querySelector(".nav");
 
 // Start with default Home page
-console.log("Uploading Home template");
+Home.createHomePage();
 
+// Check for menu click to serve different page
 nav.addEventListener("click", (item) => {
   let btnName = item.target.textContent;
 
   if (btnName == "Home") {
-    console.log("Uploading Home template");
+    Home.createHomePage();
   } else if (btnName == "About") {
-    console.log("Uploading About template");
+    About.createAboutPage();
   } else if (btnName == "Menu") {
-    console.log("Uploading Menu template");
+    Menu.createMenuPage();
   }
 });
