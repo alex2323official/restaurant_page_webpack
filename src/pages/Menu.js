@@ -13,7 +13,15 @@ export class Menu {
 
     const menuPageContainerDiv = document.createElement("div");
     menuPageContainerDiv.classList.add("menu__container");
-    menuPageContainerDiv.textContent = "MENU PAGE";
+    // menuPageContainerDiv.textContent = "MENU PAGE";
+
+    // Add image gallery to menu__container
+    this.createImg(menu1pic, menuPageContainerDiv, "$40");
+    this.createImg(menu2pic, menuPageContainerDiv, "$40");
+    this.createImg(menu3pic, menuPageContainerDiv, "$40");
+    this.createImg(menu4pic, menuPageContainerDiv, "$40");
+    this.createImg(menu5pic, menuPageContainerDiv, "$40");
+    this.createImg(menu6pic, menuPageContainerDiv, "$40");
 
     Utility.appDivContainer.appendChild(menuPageContainerDiv);
   }

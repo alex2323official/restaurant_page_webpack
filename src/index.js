@@ -22,5 +22,3 @@ Utility.nav.addEventListener("click", (item) => {
     Menu.createMenuPage();
   }
 });
-
-Menu.createImg(menu1pic, Utility.appDivContainer, "$50");
