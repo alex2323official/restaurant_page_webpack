@@ -18,10 +18,23 @@ export class Menu {
     Utility.appDivContainer.appendChild(menuPageContainerDiv);
   }
 
-  static createImg(urlLink) {
+  static createImg(urlLink, whereToAdd, price) {
+    // Create menu__img-single-container
+    let imgSingleContainer = document.createElement("div");
+    imgSingleContainer.classList.add("menu__img-single-container");
+
+    // Create menu__img
     let image = document.createElement("img");
     image.classList.add("menu__image");
     image.src = urlLink;
-    Utility.appDivContainer.appendChild(image);
+    imgSingleContainer.appendChild(image);
+
+    // Create menu__img-price
+    let imagePrice = document.createElement("span");
+    imagePrice.classList.add("menu__img-price");
+    imagePrice.textContent = price;
+    imgSingleContainer.appendChild(imagePrice);
+
+    whereToAdd.appendChild(imgSingleContainer);
   }
 }
