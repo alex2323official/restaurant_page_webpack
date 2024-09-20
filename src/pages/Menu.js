@@ -10,4 +10,11 @@ export class Menu {
 
     Utility.appDivContainer.appendChild(menuPageContainerDiv);
   }
+
+  static createImg(urlLink) {
+    let image = document.createElement("img");
+    image.classList.add("menu__image");
+    image.src = urlLink;
+    Utility.appDivContainer.appendChild(image);
+  }
 }
